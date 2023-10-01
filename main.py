@@ -40,6 +40,7 @@ cv2.putText(image, f'nose>> dad:{score_nwh_d}, mom:{score_nwh_m}', org2, font,
                    fontScale, color, thickness, cv2.LINE_AA)
 cv2.putText(image, f'mouth>> dad:{score_mwfw_d}, mom:{score_mwfw_m}', org3, font, 
                    fontScale, color, thickness, cv2.LINE_AA)
-cv2.imshow('result Image', image) 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow('result Image', image) 
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
+cv2.imwrite(image_path_child.replace("samples","result"), image)
